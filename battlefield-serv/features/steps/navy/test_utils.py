@@ -144,6 +144,6 @@ class TestUtils:
         user1 = {"user1_id":1}
         user2 = {"user2_id":2}
         navy_game_service.add(user1)
-        navy_game_service.join(user2,1)
+        navy_game_service.join({"game_id":1, **user2})
 
 test_utils = TestUtils()
