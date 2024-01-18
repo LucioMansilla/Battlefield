@@ -39,7 +39,7 @@ La estructura de directorios del proyecto Battleship es la siguiente:
     - **Dockerfile**: Definición de Docker para el servicio de rewards.
     - **README.md**: Documentación específica del servicio de rewards.
     - **requirements.txt**: Dependencias del servicio de rewards.
-    - **views.py**: Punto de entrada y lógica del servicio de rewards.
+    - **views.py**: 
 
 ## Despliegue
 
