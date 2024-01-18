@@ -2,7 +2,7 @@ FROM python:3.8-slim
 
 WORKDIR /rewards-serv
 
-ENV FLASK_APP=views.py
+ENV FLASK_APP=app.py
 
 COPY requirements.txt .
 

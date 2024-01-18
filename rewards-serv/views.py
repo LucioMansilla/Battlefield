@@ -1,7 +1,7 @@
-from flask import Flask, jsonify
+# views.py
+from flask import jsonify
 import random
-
-app = Flask(__name__)
+from app import app
 
 @app.route('/rng', methods=['GET'])
 def get_random_number():
