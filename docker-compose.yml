@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  battlefield-serv:
+    build: ./battlefield-serv
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./battlefield-serv/app/foo.db:/app/foo.db
+    environment:
+      - SECRET_KEY=asd
+      - FLASK_APP=battlefield.py
+    command: flask run --host=0.0.0.0 --port=5000 --debugger
+
+  rewards-serv:
+    build: ./rewards-serv
+    ports:
+      - "5001:5001"
+    environment:
+      - FLASK_APP=views.py
+    command: flask run --host=0.0.0.0 --port=5001 --debugger
