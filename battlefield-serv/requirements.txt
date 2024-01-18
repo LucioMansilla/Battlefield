@@ -52,3 +52,4 @@ tomli==2.0.1
 virtualenv==20.16.5
 Werkzeug==2.2.2
 zipp==3.8.1
+requests

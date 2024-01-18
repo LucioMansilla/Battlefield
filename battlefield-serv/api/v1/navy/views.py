@@ -39,6 +39,20 @@ def new_action():
     except ValidationError as err:
         return NavyResponse(400, message=err.messages).to_json(), 400
 
+import requests
+
+@navy.get("/test")
+def test():
+    try:
+        response = requests.get('http://rewards-serv:5001/rng')
+        if response.status_code == 200:
+            return jsonify(response.json()), 200
+        else:
+            return jsonify({"error": "Error al contactar rewards-serv"}), response.status_code
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": str(e)}), 500
+
+
 
 @navy.post("/ships")
 @token_auth.login_required
