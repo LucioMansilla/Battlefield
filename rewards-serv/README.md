@@ -16,6 +16,7 @@ La estructura de `rewards-serv` siguiendo los principios de Clean Architecture e
 Para construir la imagen Docker de `rewards-serv`:
 ```bash
 docker compose build rewards-serv
+```
 
 Para ejecutar `rewards-serv`, utiliza el siguiente comando:
 ```bash
