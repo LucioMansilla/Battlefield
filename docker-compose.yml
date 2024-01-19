@@ -17,5 +17,5 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - FLASK_APP=views.py
+      - FLASK_APP=app.py
     command: flask run --host=0.0.0.0 --port=5001 --debugger
