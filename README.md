@@ -1,6 +1,7 @@
 # Battleship Project
 
 El proyecto Battleship es una implementación dinámica del clásico juego de estrategia naval. Este proyecto utiliza una arquitectura de microservicios para manejar diferentes aspectos del juego.
+
 Este proyecto es una continuación del viejo battlefield: https://github.com/LucioMansilla/old-Battlefield/ en donde para explorar el uso de los microservicios la caracteristica de CI/CD no esta actualmente migrada acá.
 
 ## Descripción
